@@ -1,0 +1,77 @@
+.experience-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .experience-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .experience-timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .experience-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .experience-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .experience-header {
+    margin-bottom: 15px;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .company {
+    font-weight: 500;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .period {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .technologies {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tech-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .experience-card {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
